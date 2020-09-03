@@ -1,0 +1,10 @@
+include: package:pedantic/analysis_options.1.9.0.yaml
+
+analyzer:
+  errors:
+    missing_required_param: error
+
+linter:
+  rules:
+    - camel_case_types
+    - avoid_print
