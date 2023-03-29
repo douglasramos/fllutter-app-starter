@@ -11,6 +11,6 @@ class SystemUiOverlaySetup {
   }
 
   static void setFullScreen() {
-    SystemChrome.setEnabledSystemUIOverlays([]);
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
   }
 }
