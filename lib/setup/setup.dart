@@ -3,28 +3,23 @@ import 'package:flutter_app_starter/setup/service_locator.dart';
 import 'package:flutter_app_starter/setup/system_ui_overlay_setup.dart';
 
 class Setup {
-  Setup prepareServiceLocator() {
+  static void prepareServiceLocator() {
     ServiceLocatorSetup.prepare();
-    return this;
   }
 
-  Setup setStatusBarAsTransparent() {
+  static void setStatusBarAsTransparent() {
     SystemUiOverlaySetup.setStatusBarAsTransparent();
-    return this;
   }
 
-  Setup setFullScreen() {
+  static void setFullScreen() {
     SystemUiOverlaySetup.setFullScreen();
-    return this;
   }
 
-  Setup bindWidgetsBeforeRunApp() {
+  static void bindWidgetsBeforeRunApp() {
     FlutterFrameworkSetup.bindWidgetsBeforeRunApp();
-    return this;
   }
 
-  Setup configureFlutterErrorHandler() {
+  static void configureFlutterErrorHandler() {
     FlutterFrameworkSetup.setErrorHandling();
-    return this;
   }
 }

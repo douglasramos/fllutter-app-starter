@@ -23,6 +23,7 @@ class DefaultCloseButton extends StatelessWidget {
       color: color,
       tooltip: MaterialLocalizations.of(context).closeButtonTooltip,
       onPressed: () {
+        // ignore: unnecessary_null_comparison
         if (onPressed != null) {
           onPressed();
         } else {

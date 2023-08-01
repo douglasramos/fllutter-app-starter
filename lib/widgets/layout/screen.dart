@@ -40,7 +40,7 @@ class Screen extends StatelessWidget {
       // recognizes entire screen and detects the tap when you
       // tap anywhere on the screen
       // behavior: HitTestBehavior.opaque,
-      SystemChrome.setEnabledSystemUIOverlays([]);
+      SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
     }
 
     return Scaffold(
